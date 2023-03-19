@@ -19,10 +19,10 @@ public class RabbitMQProducerApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        final SimpleMessage simpleMessage = new SimpleMessage("Simple Name", "Simple Description");
+        final SimpleMessage simpleMessage = new SimpleMessage("Custom Message For Screenshot", "Made by vlgo0516");
 
         this.rabbitTemplate.convertAndSend(
-            "TestExchange", "TestRouting", simpleMessage
+            "MyTopicExchange", "topic", simpleMessage
         );
     }
 }
