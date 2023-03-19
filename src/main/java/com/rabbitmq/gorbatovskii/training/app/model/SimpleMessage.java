@@ -1,4 +1,4 @@
-package com.rabbitmq.gorbatovskii.training.model;
+package com.rabbitmq.gorbatovskii.training.app.model;
 
 import java.io.Serializable;
 
